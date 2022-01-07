@@ -5,6 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Optional;
 
 //@Repository
@@ -33,7 +34,7 @@ public class MemoryMemberRepository implements MemberRepository {
     }
 
     @Override
-    public ArrayList<Member> findAll() {
+    public List<Member> findAll() {
         return new ArrayList<>(store.values());
     }
 
