@@ -5,7 +5,7 @@
 	Web
 
 ## ▶ 웹 설명
-	1. 개발 환경 - 스프링 부트 2.6.2, 자바 11 Version 
+	1. 개발 환경 - Spring Boot 2.6.2, java 11 Version, h2 Database 1.4.200
 	2. 
 
 ****
