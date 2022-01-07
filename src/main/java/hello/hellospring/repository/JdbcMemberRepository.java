@@ -5,6 +5,7 @@ import org.springframework.jdbc.datasource.DataSourceUtils;
 import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 public class JdbcMemberRepository implements MemberRepository {
     private final DataSource dataSource;
@@ -62,7 +63,7 @@ public class JdbcMemberRepository implements MemberRepository {
         }
     }
     @Override
-    public ArrayList<Member> findAll() {
+    public List<Member> findAll() {
         String sql = "select * from member";
         Connection conn = null;
         PreparedStatement pstmt = null;
@@ -71,7 +72,7 @@ public class JdbcMemberRepository implements MemberRepository {
             conn = getConnection();
             pstmt = conn.prepareStatement(sql);
             rs = pstmt.executeQuery();
-            ArrayList<Member> members = new ArrayList<>();
+            List<Member> members = new ArrayList<>();
             while(rs.next()) {
                 Member member = new Member();
                 member.setId(rs.getLong("id"));
