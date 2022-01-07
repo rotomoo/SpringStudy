@@ -9,7 +9,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 public class MemberController {
@@ -38,7 +38,7 @@ public class MemberController {
 
     @GetMapping("/members")
     public String list(Model model) {
-        ArrayList<Member> members = memberService.findMembers();
+        List<Member> members = memberService.findMembers();
         model.addAttribute("members", members);
         return "members/MemberList";
     }
