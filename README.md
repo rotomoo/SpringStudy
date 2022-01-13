@@ -1,12 +1,8 @@
-[스프링] 웹 개발 프로젝트
+[스프링] 스프링 스터디
 ======================
-# 1. 웹 이름 및 설명
-## ▶ 웹 이름
-	Web
-
+# 1. 웹 설명
 ## ▶ 웹 설명
 	1. 개발 환경 - Spring Boot 2.6.2, java 11 Version, h2 Database 1.4.200
-	2. 
 
 ****
 ## 2. 폴더 및 파일 설명
@@ -29,9 +25,9 @@
                 /repository : 레포지토리 테스트
                 /service : 서비스 테스트
 ```
-
+<!-- 
 ****
-## 3. 웹 이미지
+## 3. 웹 이미지 -->
 
 [comment]: <> (<img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FdlRTsG%2FbtrmWr324Cv%2FpW1sq2uzvWWhkmjx1MIaB1%2Fimg.png" width="700px" height="393px" title="px&#40;픽셀&#41; 크기 설정" alt="main1"></img><br/>)
 
